@@ -1,0 +1,5 @@
+var pict = "#URLкартинка";
+[].forEach.call(document.querySelectorAll(".comment"), function(elem) {
+  elem.innerHTML = elem.innerHTML
+  .replace("@", "<img src='" + pict + "'>")
+});
